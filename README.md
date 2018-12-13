@@ -1,7 +1,7 @@
 # vivalinda-evaluation
 
 ## First Commit
-Designed to Use in IPAD or Table with same resolution
+Designed to Use in IPAD or Tablet with same resolution
 
 > Give Customers the power to evaluate their store experiece 
 
