@@ -1,0 +1,22 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:chownr:20180731':
+    - firebase > @firebase/firestore > grpc > node-pre-gyp > tar > chownr:
+        reason: None given
+        expires: '2018-12-24T20:40:46.588Z'
+    - nuxt > @nuxt/builder > chokidar > fsevents > node-pre-gyp > tar > chownr:
+        reason: None given
+        expires: '2018-12-24T20:40:46.588Z'
+    - firebase-tools > tar > chownr:
+        reason: None given
+        expires: '2018-12-24T20:40:46.590Z'
+    - nuxt > @nuxt/webpack > terser-webpack-plugin > cacache > chownr:
+        reason: wait to fix
+        expires: '2018-12-24T20:40:46.590Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - firebase-tools > @google-cloud/functions-emulator > cli-table2 > lodash:
+        patched: '2018-11-24T20:35:50.729Z'
